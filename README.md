@@ -43,6 +43,7 @@ tic-tac-toe/
 ---
 
 🧠 Future Improvements
+
 Add Minimax AI for unbeatable opponent
 
 Add scoreboard
