@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 90vw;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 20px;
+}
+
+.cell {
+  background-color: #ffffff;
+  border: 2px solid #333;
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #e0e0e0;
+}
+
+#status {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .cell {
+    font-size: 1.6rem;
+  }
+  #status {
+    font-size: 1.1rem;
+  }
+}
